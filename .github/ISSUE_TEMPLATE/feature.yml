@@ -1,0 +1,39 @@
+name: Feature Request
+description: Request a new feature
+title: "[Feature]: "
+labels: ["enhancement"]
+
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Short summary of the request
+      placeholder: Feature summary
+    validations:
+      required: true
+
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Type of request
+      options:
+        - New Feature
+        - Improvement
+        - Bug Fix
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS which you want to support
+      placeholder: Windows / macOS / Linux
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What are the details of your request?
+      placeholder: Feature detail
+    validations:
+      required: true
